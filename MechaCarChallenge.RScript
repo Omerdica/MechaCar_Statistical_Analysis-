@@ -2,6 +2,8 @@ install.packages("tidyverse")
 
 ?read.csv()
 
+?lm()
+
 dt <- read.csv(file = 'MechaCar_mpg.csv', check.names = F, stringsAsFactors = F)
 
 
@@ -15,7 +17,7 @@ Coefficients:
      (Intercept)    vehicle_length    vehicle_weight     spoiler_angle  ground_clearance               AWD  
       -1.040e+02         6.267e+00         1.245e-03         6.877e-02         3.546e+00        -3.411e+00  
       
- summary(lm(mpg ~ vehicle_length + vehicle_weight + spoiler_angle + ground_clearance + AWD, data= dt))
+summary(lm(mpg ~ vehicle_length + vehicle_weight + spoiler_angle + ground_clearance + AWD, data= dt))
 
 Call:
 lm(formula = mpg ~ vehicle_length + vehicle_weight + spoiler_angle + 
@@ -41,10 +43,36 @@ Multiple R-squared:  0.7149,	Adjusted R-squared:  0.6825
 F-statistic: 22.07 on 5 and 44 DF,  p-value: 5.35e-11  
 
 
-Coil <- read.csv(file = 'Suspension_Coil.csv', check.names = F, stringsAsFactors = F)  
+
+Coils <- read.csv(file = 'Suspension_Coil.csv', check.names = F, stringsAsFactors = F)
+
+library(tidyverse)
+
+?mutate()
 
 
 
+total_summary <- group_by(Coils) %>% summarize(mean = mean(PSI) , median = median(PSI) , variance = var(PSI), SD = sd(PSI)) 
+
+
+lot_summary <- Coils %>% group_by(Manufacturing_Lot)%>% summarize(Mean = mean(PSI) , Median = median(PSI) , Variance = var(PSI), SD = sd(PSI)) 
+
+
+?t.test()
+
+t.test(Coils$PSI, mu=1500)
+
+?t.test()
+
+lot1 = subset(Coils, Manufacturing_Lot =='Lot1' )
+t.test(lot1$PSI, mu=1500)
+
+lot2 = subset(Coils, Manufacturing_Lot =='Lot2' )
+t.test(lot2$PSI, mu=1500)
+
+
+lot3 = subset(Coils, Manufacturing_Lot =='Lot3' )
+t.test(lot3$PSI, mu=1500)
 
 
 
