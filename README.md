@@ -33,16 +33,16 @@ When comparing the indivudual lots we see that lot 1 is at 0.979 and lot 2 is at
 ## T-Tests on Suspension Coils
 When looking at the overall T-test for the suspensions coils we can see that our p-value is at 0.06028 which is above the 0.05% and its not much different than the population mean. 
 
-![CODE1](Images/t-test_coil1.png)
+![CODE1](Images/test_coil1.png)
 
 Lot1 and Lot2 are above the 0.05% which means they are not statisticly different from the population mean of 1,500PSI.
 
-![CODE1](Images/t-test_coil2.png)
-![CODE1](Images/t-test_coil3.png)
+![CODE1](Images/test_coil2.png)
+![CODE1](Images/test_coil3.png)
 
 When we are looking at our t-test on the suspension coils we can see that Lot3 data is reading p-value less than 0.05%. Lot 3 is statisticly different from the population mean of 1,500PSI. 
 
-![CODE1](Images/t-test_coil4.png)
+![CODE1](Images/test_coil4.png)
 
 
 
