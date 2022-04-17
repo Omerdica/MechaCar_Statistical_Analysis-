@@ -47,3 +47,20 @@ When we are looking at our t-test on the suspension coils we can see that Lot3 d
 
 
 ## Study Design: MechaCar vs Competition
+
+1. What metric or metrics are you going to test?
+
+2. What is the null hypothesis or alternative hypothesis?
+
+3. What statistical test would you use to test the hypothesis? And why?
+
+4. What data is needed to run the statistical test?
+
+    1. Lowered vehicle vs lifted vehicle and how much does it affect the mpg
+
+    2. Does a lower vehicles get better gas mileage due to less air drag and being more aerodynamic? Does a lifted vehicles get worse mpg due to having more air moving around the body of the vehicle and making it less aerodynamic? 
+
+    3. Same vehicles would be used for both tests. Each vehicle would be fitted with the same adjustable coilover suspension. One would be raised 2 inches and the other one would be lowered 2 inches. 
+    4. Vehicle speed, outside temp, wind speed, and a digital psi reader that would read the pressure around the vehicle at all times. 
+
+ 
