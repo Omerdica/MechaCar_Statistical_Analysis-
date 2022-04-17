@@ -29,6 +29,7 @@ As we look at total summary we can see that our Psi_Variance of 62.29 meets the 
 
 When comparing the indivudual lots we see that lot 1 is at 0.979 and lot 2 is at 7.46Psi which means they are both below 100PSI and meet the design specification. One that stands out the most is lot 3 with 170.28 PSI which is way above the required specification.  
 
+![CODE1](Images/Dev_2.1.png)
 
 ## T-Tests on Suspension Coils
 When looking at the overall T-test for the suspensions coils we can see that our p-value is at 0.06028 which is above the 0.05% and its not much different than the population mean. 
